@@ -49,9 +49,16 @@
         transform: translateY(-50%);
       }
 
+      .horizontal-center {
+        margin: 0 auto;
+        width: 75%;
+      }
+
       .column {
         float: left;
         width: 50%;
+        box-sizing: border-box;
+        padding: 5%;
       }
       
       /* Clear floats after the columns */
@@ -64,7 +71,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="vertical-center">
+      <div class="vertical-center horizontal-center">
         <div class="row">
           <div class="column">
             <img src="/img/placeholder.png" alt="Placeholder Image" />
