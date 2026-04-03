@@ -31,9 +31,6 @@
       }
 
       img {
-        height: 480;
-        width: 480;
-        float: right;
         max-width: 100%;
         object-fit: cover;
       }
@@ -62,6 +59,18 @@
         box-sizing: border-box;
         padding: 2.5%;
       }
+
+      .left-inner-column {
+        height: 480;
+        width: 480;
+        float: right;
+      }
+
+      .right-inner-column {
+        height: 480;
+        width: 480;
+        float: left;
+      }
       
       /* Clear floats after the columns */
       .row:after {
@@ -76,30 +85,34 @@
       <div class="vertical-center">
         <div class="row horizontal-center">
           <div class="column">
-            <img src="/img/placeholder.png" alt="Placeholder Image" />
+            <div id="main-image" class="left-inner-column">
+              <img src="/img/placeholder.png" alt="Placeholder Image" />
+            </div>
           </div>
           <div class="column">
-            <h1>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </h1>
-            <p>
-              Aliquam magna eros, pellentesque et turpis ut, faucibus lobortis nunc.
-              Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-              Aliquam erat volutpat.
-              Duis vehicula maximus nibh a mollis.
-              Mauris suscipit at turpis sit amet tempus.
-              Vestibulum hendrerit nunc vel nisl egestas faucibus.
-              Ut at interdum urna.
-              Phasellus a porta velit, vitae dapibus massa.
-              Phasellus condimentum ornare iaculis.
-              Donec in sem at mauris lacinia aliquet sed at enim.
-              Maecenas gravida magna sem, non pharetra est iaculis eu.
-              Suspendisse pretium justo quam, ac auctor diam mattis at.
-              Nam molestie dui vitae suscipit sollicitudin.
-              Curabitur sodales vestibulum urna, ac mattis magna bibendum vitae.
-              Nullam sed metus massa.
-              Vestibulum ullamcorper, est tincidunt semper blandit, nulla enim tristique erat, ut tempus nibh dolor ac felis.
-            </p>
+            <div class="right-inner-column">
+              <h1>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </h1>
+              <p>
+                Aliquam magna eros, pellentesque et turpis ut, faucibus lobortis nunc.
+                Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                Aliquam erat volutpat.
+                Duis vehicula maximus nibh a mollis.
+                Mauris suscipit at turpis sit amet tempus.
+                Vestibulum hendrerit nunc vel nisl egestas faucibus.
+                Ut at interdum urna.
+                Phasellus a porta velit, vitae dapibus massa.
+                Phasellus condimentum ornare iaculis.
+                Donec in sem at mauris lacinia aliquet sed at enim.
+                Maecenas gravida magna sem, non pharetra est iaculis eu.
+                Suspendisse pretium justo quam, ac auctor diam mattis at.
+                Nam molestie dui vitae suscipit sollicitudin.
+                Curabitur sodales vestibulum urna, ac mattis magna bibendum vitae.
+                Nullam sed metus massa.
+                Vestibulum ullamcorper, est tincidunt semper blandit, nulla enim tristique erat, ut tempus nibh dolor ac felis.
+              </p>
+            </div>
           </div>
         </div>
       </div>
