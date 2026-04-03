@@ -36,51 +36,28 @@
         object-fit: cover;
       }
 
-      .bottom {
-        position: absolute;
-        bottom: 0;
-      }
-
-      .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-        height: 100%;
-      }
-
-      .vertical-center {
-        padding-top: 15%;
-        padding-bottom: 25%;
-        height: 50%;
-      }
-
-      .row {
+      .container {
+        height: 200px;
         position: relative;
-      }
-  
-      .column {
-        position: relative;
-        float: left;
-        height: 100%;
-        width: 480;
-        height: 480;
+        border: 3px solid green;
       }
       
-      /* Clear floats after the columns */
-      .row:after {
-        content: "";
-        display: table;
-        clear: both;
+      .vertical-center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
       }
     </style>
   </head>
   <body>
-    <div class="row center vertical-center">
-      <div class="column">
+    <div class="container">
+      <div class="vertical-center">
+      <div class="">
         <img src="/img/placeholder.png" alt="Placeholder Image" />
       </div>
-      <div class="column">
+      <div class="">
         <h1>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </h1>
@@ -102,6 +79,7 @@
           Nullam sed metus massa.
           Vestibulum ullamcorper, est tincidunt semper blandit, nulla enim tristique erat, ut tempus nibh dolor ac felis.
         </p>
+      </div>
       </div>
     </div>
   </body>
