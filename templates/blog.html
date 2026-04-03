@@ -10,7 +10,14 @@
       body {
         background-color: #D6D2BB;
       }
-      
+
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        overflow: hidden;
+     }
+
       * {
         font-family: "Bricolage Grotesque", sans-serif;
         font-optical-sizing: auto;
@@ -37,11 +44,8 @@
       }
 
       .vertical-center {
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
+        max-height: 50%;
+        margin
       }
   
       .column {
@@ -67,7 +71,7 @@
       <div class="column">
         <img src="/img/placeholder.png" alt="Placeholder Image" />
       </div>
-      <div class="column">
+      <div class="column square">
         <h1>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </h1>
