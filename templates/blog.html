@@ -39,7 +39,6 @@
       .container {
         height: 100%;
         position: relative;
-        border: 3px solid green;
       }
       
       .vertical-center {
@@ -49,36 +48,50 @@
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
       }
+
+      .column {
+        float: left;
+        width: 50%;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="vertical-center">
-        <!--div class="">
-          <img src="/img/placeholder.png" alt="Placeholder Image" />
-        </div-->
-        <div class="">
-          <h1>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </h1>
-          <p>
-            Aliquam magna eros, pellentesque et turpis ut, faucibus lobortis nunc.
-            Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            Aliquam erat volutpat.
-            Duis vehicula maximus nibh a mollis.
-            Mauris suscipit at turpis sit amet tempus.
-            Vestibulum hendrerit nunc vel nisl egestas faucibus.
-            Ut at interdum urna.
-            Phasellus a porta velit, vitae dapibus massa.
-            Phasellus condimentum ornare iaculis.
-            Donec in sem at mauris lacinia aliquet sed at enim.
-            Maecenas gravida magna sem, non pharetra est iaculis eu.
-            Suspendisse pretium justo quam, ac auctor diam mattis at.
-            Nam molestie dui vitae suscipit sollicitudin.
-            Curabitur sodales vestibulum urna, ac mattis magna bibendum vitae.
-            Nullam sed metus massa.
-            Vestibulum ullamcorper, est tincidunt semper blandit, nulla enim tristique erat, ut tempus nibh dolor ac felis.
-          </p>
+        <div class="row">
+          <div class="column">
+            <img src="/img/placeholder.png" alt="Placeholder Image" />
+          </div>
+          <div class="column">
+            <h1>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </h1>
+            <p>
+              Aliquam magna eros, pellentesque et turpis ut, faucibus lobortis nunc.
+              Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+              Aliquam erat volutpat.
+              Duis vehicula maximus nibh a mollis.
+              Mauris suscipit at turpis sit amet tempus.
+              Vestibulum hendrerit nunc vel nisl egestas faucibus.
+              Ut at interdum urna.
+              Phasellus a porta velit, vitae dapibus massa.
+              Phasellus condimentum ornare iaculis.
+              Donec in sem at mauris lacinia aliquet sed at enim.
+              Maecenas gravida magna sem, non pharetra est iaculis eu.
+              Suspendisse pretium justo quam, ac auctor diam mattis at.
+              Nam molestie dui vitae suscipit sollicitudin.
+              Curabitur sodales vestibulum urna, ac mattis magna bibendum vitae.
+              Nullam sed metus massa.
+              Vestibulum ullamcorper, est tincidunt semper blandit, nulla enim tristique erat, ut tempus nibh dolor ac felis.
+            </p>
+          </div>
         </div>
       </div>
     </div>
